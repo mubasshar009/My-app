@@ -43,5 +43,5 @@ jobs:
         run: npm install --global surge
         
       - name: Deployment To Surge
-        run: surge ./ my_first_react_app.surge.sh --token ${{secrets.Surge_Token}}
+        run: surge ./ my_app-mubashar.surge.sh --token ${{secrets.Surge_Token}}
         
