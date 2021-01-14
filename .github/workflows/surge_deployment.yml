@@ -8,7 +8,7 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ master ]  
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -43,5 +43,5 @@ jobs:
         run: npm install --global surge
         
       - name: Deployment To Surge
-        run: surge ./ my_app-mubashar.surge.sh --token ${{secrets.Surge_Token}}
+        run: surge ./build my_app-mubashar.surge.sh --token ${{secrets.Surge_Token}}
         
